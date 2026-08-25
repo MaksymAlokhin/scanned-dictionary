@@ -2,25 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta http-equiv="Content-Security-Policy"
+              content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'" />
         <title>Scanned Dictionary Browser</title>
+        <link rel="stylesheet" href="scripts/vendor/bootstrap.min.css" />
         <link rel="stylesheet" href="scripts/dictionary.css" />
         <script src="scripts/base.js"></script>
-        <script src="scripts/hindi.js"></script> <!-- change this line -->
+        <script src="scripts/manifest.js"></script>
     </head>
-    <body onload="init()">
-      <div id="top">
-        <input id="prev" type="image" src="img/prev.png" onclick="prevPage()" />
-        <input type="search" id="search" placeholder="Search..." onkeypress="search(event)"
-               autofocus="true" autocomplete="off" />
-        <input id="next" type="image" src="img/next.png" onclick="nextPage()" />
+    <body class="mobile">
+      <div id="topbar" class="d-flex flex-column gap-2 p-2 bg-light border-bottom">
+        <select id="dict-select" class="form-select form-select-lg"></select>
+        <input type="search" id="search" class="form-control form-control-lg" placeholder="Search..." autocomplete="off" autofocus />
+        <div id="pager" class="d-flex gap-2">
+          <button id="prev" type="button" class="btn btn-lg btn-outline-secondary">&laquo; Previous</button>
+          <button id="next" type="button" class="btn btn-lg btn-outline-secondary">Next &raquo;</button>
+        </div>
       </div>
-      <div id="bottom">
-        <img id="page" />
-      </div>
-      <div id="not-used">
-        <div id="logo"></div>
-        <div id="title">Language - Language</div>
-        <div id="dictionary">Dictionary data</div>
+      <div id="main">
+        <div id="viewport">
+          <img id="page" draggable="false" alt="Dictionary page" />
+        </div>
       </div>
     </body>
 </html>

@@ -2,9 +2,6 @@
 var init = function() {
   // checkData();                  // comment out when all data has been checked
   document.title = "Thai-English Student's Dictionary";
-  document.getElementById("logo").innerHTML = "<img src=\"img/haas-th-en.jpg\" />";
-  document.getElementById("title").innerHTML = "Thai - English";
-  document.getElementById("dictionary").innerHTML = "Mary R. Haas, Stanford, 1964.";
   display();
 };
 

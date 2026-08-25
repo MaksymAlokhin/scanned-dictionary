@@ -2,9 +2,6 @@
 var init = function() {
   //checkData();                  // comment out when all data has been checked
   document.title = "Oxford Hindi-English Dictionary";
-  document.getElementById("logo").innerHTML = "<img src=\"img/oxford-hi-en.jpg\" />";
-  document.getElementById("title").innerHTML = "Hindi - English";
-  document.getElementById("dictionary").innerHTML = "R.S.McGregor, Oxford, 1993.";
   display();
 };
 

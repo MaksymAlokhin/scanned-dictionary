@@ -2,9 +2,6 @@
 var init = function() {
   //checkData();                  // comment out when all data has been checked
   document.title = "Arabic-English Dictionary";
-  document.getElementById("logo").innerHTML = "<img src=\"img/hans-wehr-ar-en.jpg\" />";
-  document.getElementById("title").innerHTML = "Arabic - English";
-  document.getElementById("dictionary").innerHTML = "Hans Wehr - J.M.Cowan<br>3rd ed., 1976.";
   display();
 };
 

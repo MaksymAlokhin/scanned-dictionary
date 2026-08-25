@@ -2,9 +2,6 @@
 var init = function() {
   checkData();                  // comment out when all data has been checked
   document.title = "Persian-English Dictionary";
-  document.getElementById("logo").innerHTML = "<img src=\"img/aryanpur-pe-en.jpg\" />";
-  document.getElementById("title").innerHTML = "Persian - English";
-  document.getElementById("dictionary").innerHTML = "Abbas &amp; Manoochehr<br>Aryanpur-Kashani, 1996";
   display();
 };
 
