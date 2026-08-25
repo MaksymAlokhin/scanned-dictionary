@@ -1,3 +1,5 @@
+![Scanned Dictionary Browser](screenshots/scanned-dictionary.png)<br /><br />
+
 # Scanned Dictionary Browser #
 
 This is a webpage that shows a given page of a scanned dictionary. It can
